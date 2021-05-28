@@ -13,7 +13,12 @@ class BmiCaliculator {
     // 最適体重と比較
     compareWeight() {
         let compare = this.weight - this.standard;
-        return(compare.toFixed(2));
+        if (compare > 0) {
+            return('+' + compare.toFixed(2));
+        } else {
+            return(compare.toFixed(2));
+        }
+        
     }
 
     // bmi結果振り分け
@@ -62,5 +67,5 @@ class BmiCaliculator {
     }
 }
 
-let satoBmi = new BmiCaliculator('sato', 180, 130);
+let satoBmi = new BmiCaliculator('sato', 180, 13);
 satoBmi.displayResult();
