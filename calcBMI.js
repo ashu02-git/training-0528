@@ -67,5 +67,5 @@ class BmiCaliculator {
     }
 }
 
-let satoBmi = new BmiCaliculator('sato', 180, 13);
+let satoBmi = new BmiCaliculator('sato', 180, 80);
 satoBmi.displayResult();
